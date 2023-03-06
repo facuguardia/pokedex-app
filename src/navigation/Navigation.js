@@ -50,7 +50,7 @@ function renderPokedexIcon() {
   return (
     <Image
       source={require("../../assets/pokeball.png")}
-      style={{ width: 75, height: 75, top: -15, resizeMode: 'contain' }}
+      style={{ width: 75, height: 75, top: -15, resizeMode: "contain" }}
     />
   );
 }
