@@ -30,6 +30,5 @@ const styles = StyleSheet.create({
     paddingVertical: 5,
     borderRadius: 20,
     marginHorizontal: 10,
-    backgroundColor: "#eee",
   },
 });

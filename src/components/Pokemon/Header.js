@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, StyleSheet, SafeAreaView, Image } from "react-native";
 import { capitalize } from "lodash";
-import getColorPokemonType from "../utils/getColorPokemonType";
+import getColorPokemonType from "../../utils/getColorPokemonType";
 
 export default function Header(props) {
   const { name, order, image, type } = props;
@@ -54,12 +54,11 @@ const styles = StyleSheet.create({
     paddingTop: 40,
   },
   name: {
-    fontSize: 30,
+    fontSize: 27,
     fontWeight: "bold",
     color: "#fff",
   },
   order: {
-    fontSize: 20,
     color: "#fff",
     fontWeight: "bold",
   },
