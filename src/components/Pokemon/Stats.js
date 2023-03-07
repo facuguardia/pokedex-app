@@ -24,7 +24,7 @@ export default function Stats(props) {
           <View style={styles.blockInfo}>
             <Text style={styles.num}>{item.base_stat}</Text>
             <View style={styles.bgBar}>
-              <View style={[styles.bar, barWidth(item.base_stat)]}></View>
+              <View style={[styles.bar, barWidth(item.base_stat)]} />
             </View>
           </View>
         </View>

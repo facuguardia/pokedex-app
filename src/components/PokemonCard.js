@@ -6,16 +6,12 @@ import {
   Image,
   TouchableWithoutFeedback,
 } from "react-native";
-
 import { capitalize } from "lodash";
-
-import getColorPokemonType from "../utils/getColorPokemonType";
-
 import { useNavigation } from "@react-navigation/native";
+import getColorPokemonType from "../utils/getColorPokemonType";
 
 export default function PokemonCard(props) {
   const { pokemon } = props;
-  console.log(pokemon.image);
   const navigation = useNavigation();
 
   const pokemonColor = getColorPokemonType(pokemon.type);
@@ -32,7 +28,7 @@ export default function PokemonCard(props) {
             <Text style={styles.order}>
               #{`${pokemon.order}`.padStart(3, 0)}
             </Text>
-            <Text style={styles.title}>{capitalize(pokemon.name)}</Text>
+            <Text style={styles.name}>{capitalize(pokemon.name)}</Text>
             <Image style={styles.image} source={{ uri: pokemon.image }} />
           </View>
         </View>
@@ -42,13 +38,6 @@ export default function PokemonCard(props) {
 }
 
 const styles = StyleSheet.create({
-  image: {
-    position: "absolute",
-    bottom: 2,
-    right: 2,
-    width: 90,
-    height: 90,
-  },
   card: {
     flex: 1,
     height: 130,
@@ -62,17 +51,25 @@ const styles = StyleSheet.create({
     borderRadius: 15,
     padding: 10,
   },
-  title: {
-    color: "#fff",
-    fontSize: 15,
-    fontWeight: "bold",
-    paddingTop: 10,
-  },
   order: {
     position: "absolute",
     right: 10,
     top: 10,
     color: "#fff",
     fontSize: 11,
+  },
+  name: {
+    color: "#fff",
+    fontWeight: "bold",
+    fontSize: 15,
+    paddingTop: 10,
+  },
+
+  image: {
+    position: "absolute",
+    bottom: 2,
+    right: 2,
+    width: 90,
+    height: 90,
   },
 });

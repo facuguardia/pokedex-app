@@ -19,11 +19,10 @@ export default function Header(props) {
     <>
       <View style={bgStyles}/>
 
-      <SafeAreaView style={styles.content}>
+      <SafeAreaView style={styles.container}>
         <View style={styles.header}>
           <Text style={styles.name}>{capitalize(name)}</Text>
           <Text style={styles.order}>#{`${order}`.padStart(3, 0)}</Text>
-
         </View>
         <View style={styles.contentImg}>
           <Image source={{uri: image}} styles={styles.image} />
@@ -43,7 +42,7 @@ const styles = StyleSheet.create({
     borderBottomLeftRadius: 300,
     transform: [{ scaleX: 2}],
   },
-  content: {
+  container: {
     marginHorizontal: 20,
     marginTop: 30,
   },
@@ -71,6 +70,6 @@ const styles = StyleSheet.create({
   image: {
     width: 250,
     height: 300,
-    rizeMode: "contain",
+    resizeMode: "contain",
   },
 });

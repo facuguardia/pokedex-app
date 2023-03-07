@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { ScrollView } from "react-native";
-import { getPokemonCardApi } from "../api/pokemon";
 import Icon from "react-native-vector-icons/FontAwesome5";
+import { getPokemonCardApi } from "../api/pokemon";
 import Header from "../components/Pokemon/Header";
 import Type from "../components/Pokemon/Type";
 import Stats from "../components/Pokemon/Stats";

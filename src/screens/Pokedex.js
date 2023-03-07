@@ -4,18 +4,15 @@ import { getPokemonsApi, getPokemonDetailsApi } from "../api/pokemon";
 import PokemonList from "../components/PokemonList";
 
 export default function Pokedex() {
-  // Estado para guardar los pokemons
   const [pokemons, setPokemons] = useState([]);
   const [nextUrl, setNextUrl] = useState(null);
 
-  // Estado para guardar el pokemon seleccionado
   useEffect(() => {
     (async () => {
       await loadPokemons();
     })();
   }, []);
 
-  // Función para cargar los pokemons
   const loadPokemons = async () => {
     try {
       const response = await getPokemonsApi(nextUrl);

@@ -20,8 +20,8 @@ export default function Type(props) {
 
 const styles = StyleSheet.create({
   container: {
-    flexDirection: "row",
     marginTop: 50,
+    flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
   },
