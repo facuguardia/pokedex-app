@@ -22,7 +22,7 @@ export default function LoginForm() {
     validateOnChange: false,
     onSubmit: (formData) => {
       setError("");
-      const { email, password } = formData;
+      const { username, password } = formData;
       if (username !== user.username || password !== user.password) {
         setError("Usuario o contraseña incorrectos");
       } else {

@@ -5,7 +5,7 @@ import { FAVORITE_STORAGE } from "../utils/constants";
 export async function getFavoriteApi() {
   try {
     const response = await AsyncStorage.getItem(FAVORITE_STORAGE);
-    return JSON.parse(response || []);
+    return JSON.Parse(response || []);
   } catch (error) {
     throw error;
   }
