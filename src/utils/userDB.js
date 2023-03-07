@@ -1,6 +1,6 @@
 export const user = {
-  username: "admin",
-  password: "admin",
+  username: "marty",
+  password: "marty",
 };
 
 export const userDetails = {

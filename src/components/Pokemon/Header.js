@@ -5,19 +5,18 @@ import getColorPokemonType from "../../utils/getColorPokemonType";
 
 export default function Header(props) {
   const { name, order, image, type } = props;
-
   const color = getColorPokemonType(type);
 
   const bgStyles = [
     {
       backgroundColor: color,
-      ...styles.bg
-    }
+      ...styles.bg,
+    },
   ];
 
   return (
     <>
-      <View style={bgStyles}/>
+      <View style={bgStyles} />
 
       <SafeAreaView style={styles.container}>
         <View style={styles.header}>
@@ -25,13 +24,12 @@ export default function Header(props) {
           <Text style={styles.order}>#{`${order}`.padStart(3, 0)}</Text>
         </View>
         <View style={styles.contentImg}>
-          <Image source={{uri: image}} styles={styles.image} />
+          <Image source={{ uri: image }} style={styles.image} />
         </View>
       </SafeAreaView>
     </>
   );
 }
-
 
 const styles = StyleSheet.create({
   bg: {
@@ -40,7 +38,7 @@ const styles = StyleSheet.create({
     position: "absolute",
     borderBottomEndRadius: 300,
     borderBottomLeftRadius: 300,
-    transform: [{ scaleX: 2}],
+    transform: [{ scaleX: 2 }],
   },
   container: {
     marginHorizontal: 20,

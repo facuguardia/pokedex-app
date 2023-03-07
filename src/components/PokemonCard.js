@@ -25,11 +25,11 @@ export default function PokemonCard(props) {
       <View style={styles.card}>
         <View style={styles.spacing}>
           <View style={bgStyles}>
-            <Text style={styles.order}>
+            <Text style={styles.number}>
               #{`${pokemon.order}`.padStart(3, 0)}
             </Text>
             <Text style={styles.name}>{capitalize(pokemon.name)}</Text>
-            <Image style={styles.image} source={{ uri: pokemon.image }} />
+            <Image source={{ uri: pokemon.image }} style={styles.image} />
           </View>
         </View>
       </View>
@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
     borderRadius: 15,
     padding: 10,
   },
-  order: {
+  number: {
     position: "absolute",
     right: 10,
     top: 10,
@@ -64,7 +64,6 @@ const styles = StyleSheet.create({
     fontSize: 15,
     paddingTop: 10,
   },
-
   image: {
     position: "absolute",
     bottom: 2,

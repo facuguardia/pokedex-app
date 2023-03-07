@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View } from "react-native";
 import LoginForm from "../components/auth/LoginForm";
 import UserData from "../components/auth/UserData";
 import useAuth from "../hooks/useAuth";

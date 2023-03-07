@@ -24,7 +24,7 @@ export default function PokemonList(props) {
           <ActivityIndicator
             size="large"
             style={styles.spinner}
-            color="#AEAEAE"
+            color="#aeaeae"
           />
         )
       }
