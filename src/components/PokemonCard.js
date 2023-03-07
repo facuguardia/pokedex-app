@@ -15,13 +15,14 @@ import { useNavigation } from "@react-navigation/native";
 
 export default function PokemonCard(props) {
   const { pokemon } = props;
+  console.log(pokemon.image);
   const navigation = useNavigation();
 
   const pokemonColor = getColorPokemonType(pokemon.type);
   const bgStyles = { backgroundColor: pokemonColor, ...styles.bgStyles };
 
   const goToPokemon = () => {
-    navigation.navigate("pokemon", { id: pokemon.id });
+    navigation.navigate("Pokemon", { id: pokemon.id });
   };
   return (
     <TouchableWithoutFeedback onPress={goToPokemon}>
@@ -45,8 +46,8 @@ const styles = StyleSheet.create({
     position: "absolute",
     bottom: 2,
     right: 2,
-    width: 100,
-    height: 100,
+    width: 90,
+    height: 90,
   },
   card: {
     flex: 1,
@@ -54,16 +55,16 @@ const styles = StyleSheet.create({
   },
   spacing: {
     flex: 1,
-    padding: 10,
+    padding: 5,
   },
   bgStyles: {
     flex: 1,
-    borderRadius: 10,
+    borderRadius: 15,
     padding: 10,
   },
   title: {
-    color: "white",
-    fontSize: 20,
+    color: "#fff",
+    fontSize: 15,
     fontWeight: "bold",
     paddingTop: 10,
   },
@@ -72,6 +73,6 @@ const styles = StyleSheet.create({
     right: 10,
     top: 10,
     color: "#fff",
-    fontSize: 16,
+    fontSize: 11,
   },
 });
