@@ -24,7 +24,7 @@ export default function PokemonList(props) {
           <ActivityIndicator
             size="large"
             style={styles.spinner}
-            color="#aeaeae"
+            color="#AEAEAE"
           />
         )
       }
@@ -39,6 +39,6 @@ const styles = StyleSheet.create({
   },
   spinner: {
     marginTop: 20,
-    marginBottom: Platform.OS === "android" ? 90 : 60,
+    marginBottom: Platform.OS === "android" ? 200 : 60,
   },
 });
