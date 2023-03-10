@@ -24,10 +24,13 @@ Para correr el proyecto, sigue los siguientes pasos:
 
 [![pk-1.jpg](https://i.postimg.cc/pV94bh2R/pk-1.jpg)](https://postimg.cc/PNj21qpR)
 [![pk-2.jpg](https://i.postimg.cc/LsCCGRwJ/pk-2.jpg)](https://postimg.cc/wtNQmK6z)
+#
 [![pk-3.jpg](https://i.postimg.cc/nzNdc2HZ/pk-3.jpg)](https://postimg.cc/34Cjtg4b)
 [![pk-4.jpg](https://i.postimg.cc/tCQrKBSN/pk-4.jpg)](https://postimg.cc/NLD7TkwK)
+#
 [![pk-5.jpg](https://i.postimg.cc/K8QJgxZ0/pk-5.jpg)](https://postimg.cc/xXJKwrNm)
 [![pk-6.jpg](https://i.postimg.cc/HnG2CL2k/pk-6.jpg)](https://postimg.cc/KkNLPxw6)
+#
 [![pk-7.jpg](https://i.postimg.cc/RCfdLcS6/pk-7.jpg)](https://postimg.cc/WtN02qJT)
 [![pk-8.jpg](https://i.postimg.cc/NfkxWBrQ/pk-8.jpg)](https://postimg.cc/xcqHmrRZ)
 
