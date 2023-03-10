@@ -9,7 +9,7 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#ff0000"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -18,7 +18,7 @@
       "supportsTablet": true
     },
     "android": {
-      "package": "ar.facudev.pokedex",
+      "package": "com.facudev.pokedex",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"

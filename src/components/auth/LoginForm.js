@@ -1,12 +1,5 @@
 import React, { useState } from "react";
-import {
-  View,
-  Text,
-  StyleSheet,
-  TextInput,
-  Button,
-  Keyboard,
-} from "react-native";
+import { View, Text, StyleSheet, TextInput, Button } from "react-native";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { user, userDetails } from "../../utils/userDB";
@@ -32,7 +25,7 @@ export default function LoginForm() {
   });
 
   return (
-    <View>
+    <View style={styles.container}>
       <Text style={styles.title}>Iniciar sesión</Text>
       <TextInput
         placeholder="Nombre de usuario"
@@ -49,7 +42,9 @@ export default function LoginForm() {
         value={formik.values.password}
         onChangeText={(text) => formik.setFieldValue("password", text)}
       />
-      <Button title="Entrar" onPress={formik.handleSubmit} style={styles.btn} />
+
+      <Button title="Entrar" onPress={formik.handleSubmit} />
+
       <Text style={styles.errors}>{formik.errors.username}</Text>
       <Text style={styles.errors}>{formik.errors.password}</Text>
       <Text style={styles.errors}>{error}</Text>
@@ -72,6 +67,9 @@ function validationSchema() {
 }
 
 const styles = StyleSheet.create({
+  container: {
+    paddingHorizontal: 20,
+  },
   title: {
     textAlign: "center",
     fontSize: 28,
@@ -88,6 +86,8 @@ const styles = StyleSheet.create({
   },
   btn: {
     marginTop: 20,
+    borderRadius: 20,
+    overflow: "hidden",
   },
   errors: {
     color: "red",
