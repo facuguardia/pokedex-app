@@ -6,8 +6,6 @@
  - lodash v4.17.21
  - formik v2.2.9
 
-#
-
 ## Cómo correr el proyecto
 Para correr el proyecto, sigue los siguientes pasos:
 
@@ -17,10 +15,7 @@ Para correr el proyecto, sigue los siguientes pasos:
 
 ¡Y eso es todo! Esperamos que disfrutes utilizando Pokedex-app.
 
-#
-
-
-#📱 Vistas de la App
+📱# Vistas de la App
 
 [![pk-1.jpg](https://i.postimg.cc/pV94bh2R/pk-1.jpg)](https://postimg.cc/PNj21qpR)
 [![pk-2.jpg](https://i.postimg.cc/LsCCGRwJ/pk-2.jpg)](https://postimg.cc/wtNQmK6z)
