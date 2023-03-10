@@ -1,6 +1,6 @@
 # Pokedex-app
 
-## Este es un proyecto de una aplicación de Pokedex, creado con Expo. La aplicación utiliza las siguientes dependencias:
+## Este es un proyecto de una aplicación de Pokedex, creado con Expo y React Native. La aplicación utiliza las siguientes dependencias:
 
  - yup v1.0.2
  - lodash v4.17.21
