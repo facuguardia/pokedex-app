@@ -5,22 +5,17 @@
   "build": {
     "development": {
       "developmentClient": true,
-      "distribution": "internal",
-      "ios": {
-        "resourceClass": "m1-medium"
-      }
+      "distribution": "internal"
     },
     "preview": {
-      "distribution": "internal",
       "ios": {
-        "resourceClass": "m1-medium"
+        "simulator": true
+      },
+      "android": {
+        "buildType": "apk"
       }
     },
-    "production": {
-      "ios": {
-        "resourceClass": "m1-medium"
-      }
-    }
+    "production": {}
   },
   "submit": {
     "production": {}
